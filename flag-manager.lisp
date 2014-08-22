@@ -16,11 +16,11 @@
 	flags))
 
 (defun flag-on-p(flag)
-  (declare(:type integer flag))
+  (declare(type integer flag))
   (logbitp flag *flags*))
 
 (defun flag-off-p(flag)
-  (declare(:type integer flag))
+  (declare(type integer flag))
   (not(flag-on-p flag)))
 
 (defmacro deflag(name)
